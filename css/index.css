@@ -46,14 +46,14 @@ h1{
 	border-radius: 4px;
 	transition: var(--transition);
 }
-.container .row:has(a:hover){
+.container .row:hover{
 	background: var(--color-3);
 }
 .container .row img{
 	width: auto;
 	height: 100%;
 }
-.container .row a{
+.container .row p{
 	width: fit-content;
 	height: fit-content;
 	color: var(--text-color);

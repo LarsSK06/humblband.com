@@ -1,78 +1,352 @@
+/* Stylish heading */
+
+.stylish-heading{
+	font-size: 50px;
+	font-family: var(--strong-font);
+	font-weight: 300;
+	color: var(--text-color);
+}
+
+.stylish-heading
+span{
+	color: var(--accent-color);
+	font-family: inherit;
+	font-weight: 600;
+}
+
+
+
+/* Header */
+
+header{
+	width: 100%;
+	height: calc(var(--header-height) - 1px);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row nowrap;
+	gap: 20px;
+	border-bottom: 1px solid var(--transparent);
+	transition: var(--transition);
+	background: var(--color-1);
+}
+
+header.background{
+	background: var(--color-2);
+}
+
+header
+section{
+	width: 0;
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-flow: row nowrap;
+}
+
+header
+section
+a{
+	width: fit-content;
+	height: fit-content;
+	font-size: 18px;
+	font-family: var(--strong-font);
+	font-weight: 500;
+	color: var(--text-color);
+	transition: var(--transition);
+}
+
+header
+section
+a:hover{
+	filter: brightness(75%);
+}
+
+header
+section{
+	width: fit-content;
+	height: 100%;
+}
+
+header
+img{
+	width: auto;
+	height: 100%;
+	aspect-ratio: 1.25;
+	object-fit: contain;
+	opacity: 0;
+	transition: var(--transition);
+}
+
+header.background
+img{
+	opacity: 1;
+}
+
+
+
 /* Hero */
 
 .hero{
 	width: 100%;
 	height: 100vh;
-	position: relative;
-}
-.hero:hover .controls{
-	opacity: 1;
-	pointer-events: all;
-	transition-delay: 0s;
-}
-.hero .controls{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	opacity: 0;
-	transition: var(--transition);
-	transition-delay: .5s;
-}
-.hero .controls .button-container{
-	width: 50px;
-	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.hero .controls .button-container.left{
-	float: left;
+
+.hero
+img{
+	width: 400px;
+	height: 400px;
+	object-fit: contain;
 }
-.hero .controls .button-container.right{
-	float: right;
-}
-.hero .controls .button-container button{
-	width: calc(100% - 10px);
+
+
+
+/* About us */
+
+.about{
+	width: calc(100% - 60px);
 	height: fit-content;
-	padding: 5px;
-	cursor: pointer;
-	background: none;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-flow: row wrap;
+	gap: 50px;
+	border-top: 1px solid var(--transparent);
+	border-bottom: 1px solid var(--transparent);
+	background: var(--color-2);
 }
-.hero .controls .button-container button svg{
-	width: 100%;
+
+.about
+img{
+	width: 798px;
 	height: auto;
-	filter: drop-shadow(0 0 10px #000);
-}
-.hero .controls .button-container button svg *{
-	fill: none;
-	stroke: var(--text-color);
-	stroke-width: 10;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-}
-.hero .frame{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-.hero .frame .content{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	display: inline-flex;
-	transition: 1s ease;
-}
-.hero .frame .content .slide{
-	width: 100%;
-	height: 100%;
-}
-.hero .frame .content .slide img{
-	width: 100%;
-	height: 100%;
+	aspect-ratio: 2;
 	object-fit: cover;
-	object-position: center;
+	object-position: top center;
+	border-radius: 4px;
+	border: 1px solid var(--transparent);
+}
+
+.about
+.text{
+	width: 800px;
+	height: fit-content;
+}
+
+.about
+.text
+h1{
+	width: fit-content;
+	height: fit-content;
+}
+
+.about
+.text
+p{
+	width: fit-content;
+	height: fit-content;
+	font-size: 30px;
+	font-weight: 300;
+	color: var(--text-color);
+}
+
+
+
+/* Socials */
+
+.socials{
+	width: 100%;
+	height: fit-content;
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials
+.container{
+	width: fit-content;
+	height: fit-content;
+}
+
+.socials
+.container
+h1{
+	width: fit-content;
+	height: fit-content;
+	margin: 10px 0;
+}
+
+.socials
+.container
+.content{
+	width: fit-content;
+	height: fit-content;
+	margin: 10px 0;
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-flow: column nowrap;
+	gap: 20px;
+}
+
+.socials
+.container
+.content
+.row{
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-flow: row nowrap;
+	gap: 10px;
+	border-radius: 4px;
+	transition: var(--transition);
+}
+
+.socials
+.container
+.content
+.row:hover{
+	background: var(--color-2);
+}
+
+.socials
+.container
+.content
+.row
+img{
+	width: 50px;
+	height: auto;
+	aspect-ratio: 1;
+}
+
+.socials
+.container
+.content
+.row
+h2{
+	width: fit-content;
+	height: fit-content;
+	font-size: 34px;
+	font-family: var(--strong-font);
+	font-weight: 400;
+	color: var(--text-color);
+}
+
+
+
+/* Contact */
+
+.contact{
+	width: calc(100% - 60px);
+	height: fit-content;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-flow: row wrap;
+	gap: 50px;
+	border-top: 1px solid var(--transparent);
+	border-bottom: 1px solid var(--transparent);
+	background: var(--color-2);
+}
+
+.contact
+.container{
+	width: fit-content;
+	height: fit-content;
+}
+
+.contact
+.container
+h1{
+	width: fit-content;
+	height: fit-content;
+}
+
+.contact
+.container
+p{
+	width: fit-content;
+	height: fit-content;
+	font-size: 24px;
+	font-weight: 300;
+	color: var(--text-color);
+}
+
+.contact
+.container
+p
+a{
+	font-style: italic;
+	color: var(--text-color);
+}
+
+
+
+/* Us */
+
+.us{
+	width: calc(100% - 40px);
+	height: fit-content;
+	padding: 100px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	gap: 20px;
+}
+
+.us
+.card{
+	width: 260px;
+	height: fit-content;
+	padding: 20px;
+	border: 1px solid var(--transparent);
+	border-radius: 4px;
+	background: var(--color-2);
+}
+
+.us
+.card
+img{
+	width: calc(100% - 2px);
+	height: auto;
+	aspect-ratio: 1;
+	border: 1px solid var(--transparent);
+	border-radius: 4px;
+}
+
+.us
+.card
+h2{
+	width: 100%;
+	height: fit-content;
+	font-size: 30px;
+	font-weight: 300;
+	color: var(--text-color);
+}
+
+.us
+.card
+h3{
+	width: 100%;
+	height: fit-content;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+	color: #999;
 }

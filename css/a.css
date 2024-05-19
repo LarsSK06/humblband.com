@@ -1,5 +1,6 @@
 /* Imports */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 
@@ -37,6 +38,13 @@
     --color-4: #3c3c3c;
     --text-color: #fff;
 	--transparent: rgba(255, 255, 255, .25);
+	--accent-color: #ec008c;
+
+
+
+	/* Fonts */
+
+	--strong-font: "Montserrat";
 
 
 
@@ -55,53 +63,8 @@ body{
 
 
 
-/* Header */
+/* HTML */
 
-header{
-	width: 100%;
-	height: var(--header-height);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-flow: row nowrap;
-	gap: 20px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	transition: var(--transition);
-}
-header.background{
-	background: var(--color-2);
-}
-header section{
-	width: 0;
-	height: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-grow: 1;
-}
-header section a{
-	width: fit-content;
-	height: fit-content;
-	padding: 0 4px;
-	font-size: 18px;
-	color: var(--text-color);
-	filter: drop-shadow(0 0 10px #000);
-	transition: var(--transition);
-}
-header.background section a{
-	filter: none;
-}
-header img{
-	width: auto;
-	height: 100%;
-	aspect-ratio: 1.25;
-	object-fit: contain;
-	filter: drop-shadow(0 0 10px #000);
-	transition: var(--transition);
-}
-header.background img{
-	filter: none;
+html{
+	scroll-behavior: smooth;
 }

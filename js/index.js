@@ -1,40 +1,42 @@
 // On load
 
-window.addEventListener("load", () => {
-	header();
-	hero();
+window.addEventListener("load", async () => {
+    // Setup
+    header();
+    hero();
+    //loader();
 });
 
 
 
-// Functions
+// Setup functions
 
 function header(){
-	// Elements
+    // Elements
 
-	const header = document.querySelector("header");
+    const header = document.querySelector("header");
 
 
 
-	// On scroll
+    // On scroll
 
-	window.addEventListener("scroll", () => {
-		if(window.scrollY > window.innerHeight * .75) header.classList.add("background");
-		else if(header.classList.contains("background")) header.classList.remove("background");
-	});
+    window.addEventListener("scroll", () => {
+        if(window.scrollY > window.innerHeight * .75) header.classList.add("background");
+        else if(header.classList.contains("background")) header.classList.remove("background");
+    });
 }
 
-function hero(){
-	// Elements
+async function hero(){
+    // Elements
 
-	const logo = document.querySelector("div.hero img");
+    const image = document.querySelector("div.hero img");
 
 
 
-	// On scroll
+    // On scroll
 
-	window.addEventListener("scroll", () => {
-		logo.style.scale = 1 + window.scrollY / window.innerHeight;
-		logo.style.opacity = 1 - (window.scrollY / window.innerHeight);
-	});
+    window.addEventListener("scroll", () => {
+        image.style.scale = 1 + window.scrollY / window.innerHeight / 4;
+        image.style.opacity = 1 - (window.scrollY / window.innerHeight);
+    });
 }

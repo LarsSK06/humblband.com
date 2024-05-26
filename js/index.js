@@ -29,7 +29,8 @@ function header(){
 async function hero(){
     // Elements
 
-    const image = document.querySelector("div.hero img");
+    const hero = document.querySelector("div.hero");
+    const image = hero.querySelector("img");
 
 
 

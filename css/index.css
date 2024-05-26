@@ -286,10 +286,26 @@ a{
 /* Responsive layout */
 
 @media (width < 1200px){
+    /* Header */
+
+    header{
+        display: none;
+    }
+
+
+
     /* Hero */
 
     .hero{
         height: auto;
         aspect-ratio: 1.25;
+    }
+
+
+
+    /* Footer */
+
+    footer{
+        justify-content: start;
     }
 }

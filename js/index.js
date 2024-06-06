@@ -1,43 +1,20 @@
 // On load
 
-window.addEventListener("load", async () => {
-    // Setup
-    header();
+window.addEventListener("load", () => {
     hero();
-    //loader();
 });
 
 
 
-// Setup functions
+// Functions
 
-function header(){
+function hero(){
     // Elements
-
-    const header = document.querySelector("header");
-
+    const image = document.querySelector("#band-img");
 
 
     // On scroll
-
     window.addEventListener("scroll", () => {
-        if(window.scrollY > window.innerHeight * .75) header.classList.add("background");
-        else if(header.classList.contains("background")) header.classList.remove("background");
-    });
-}
-
-async function hero(){
-    // Elements
-
-    const hero = document.querySelector("div.hero");
-    const image = hero.querySelector("img");
-
-
-
-    // On scroll
-
-    window.addEventListener("scroll", () => {
-        image.style.scale = 1 + window.scrollY / window.innerHeight / 4;
-        image.style.opacity = 1 - (window.scrollY / window.innerHeight);
+        image.style.scale = 1 + (window.scrollY / 2000);
     });
 }

@@ -3,17 +3,20 @@
 
     <head>
 
-        <title>Humbl music</title>
+        <title>Humbl band</title>
 
         <link rel="icon" href="svg/icon.svg">
 
         <link rel="stylesheet" href="css/a.css">
         <link rel="stylesheet" href="css/index.css">
 
+        <script src="js/a.js"></script>
         <script src="js/index.js"></script>
 
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Band, Music, Drums, Guitar, Bass, Singing, Vocals">
+        <meta name="title" content="Norwegian, all-genre band - Humbl">
         <meta name="description" content="We are Humbl, a Norwegian all-genre band, founded in Hamar, autumn of 2023.">
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
@@ -21,131 +24,106 @@
     <body>
 
         <header>
-            <section>
-                <a href="#hero">
-                    Home
+            <div class="logo" _device="desktop">
+                <a href="/">
+                    <img alt="Logo" src="svg/logo-white.svg">
                 </a>
-                <a href="#about">
-                    About us
-                </a>
-            </section>
-            <img alt="Logo" src="svg/logo-white.svg">
-            <section>
-                <a href="#us">
-                    Us
-                </a>
-                <a href="/no">
-                    <b>
-                        NO
-                    </b>
-                </a>
-            </section>
+            </div>
+            <ul>
+                <li _device="desktop">
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li _device="desktop">
+                    <a href="/about">
+                        About us
+                    </a>
+                </li>
+                <li _device="desktop">
+                    <a href="/contact">
+                        Contact us
+                    </a>
+                </li>
+                <li _device="phone">
+                    <a aria-label="Menu" id="menu-button">
+                        <img alt="Menu" src="svg/menu.svg">
+                    </a>
+                </li>
+            </ul>
         </header>
 
-        <div class="hero" id="hero">
-            <img alt="Band photo" src="img/band/band-1.jpg">
-        </div>
+        <ul class="disabled" id="menu" _device="phone">
+            <div class="content">
+                <li>
+                    <ul>
+                        <a href="/home">
+                            Home
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="/about">
+                            About us
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="/contact">
+                            Contact
+                        </a>
+                    </ul>
+                </li>
+            </div>
+        </ul>
 
-        <div class="about" id="about">
-            <div class="text">
-                <h1 class="stylish-heading">
+        <section class="hero">
+            <div class="image">
+                <img id="band-img" alt="Band" src="img/band/band-2.jpg">
+            </div>
+        </section>
+
+        <section class="text">
+            <div class="content">
+                <h1>
                     About
                     <span>
                         us
                     </span>
                 </h1>
                 <p>
-                    We are Humbl, a Norwegian all-genre band, founded in Hamar, autumn of 2023.
-                    <br><br>
-                    You can contact us at<br>
+                    We are Humbl, a Norwegian 4-piece band.
+                    <br>
+                    We specialize in all-genres, mostly within rock.
+                    <br>
+
+                    <br>
+
+                    You can contact us at
+                    <br>
                     - <a href="mailto:contact@humblband.com">
-                        <i>contact@humblband.com</i>
+                        contact@humblband.com
                     </a>
-                    <br><br>
-                    You can visit our socials at<br>
+                    <br>
+
+                    <br>
+
+                    You can visit our social media at
+                    <br>
                     - <a href="https://www.instagram.com/humblband/" target="_blank">
-                        <i>Instagram</i>
+                        Instagram
                     </a>
                     <br>
                     - <a href="https://www.facebook.com/people/Humbl-music/61559607733508/" target="_blank">
-                        <i>Facebook</i>
-                    </a>
-                </p>
-            </div>
-        </div>
-
-        <div class="us">
-            <div class="card">
-                <img alt="Avatar" src="img/people/hedvig.jpg">
-                <div class="text">
-                    <h2>
-                        Hedvig
-                    </h2>
-                    <h3>
-                        Bass, vocals
-                    </h3>
-                </div>
-            </div>
-            <div class="card">
-                <img alt="Avatar" src="img/people/martin.jpg">
-                <div class="text">
-                    <h2>
-                        Martin
-                    </h2>
-                    <h3>
-                        Guitar, vocals
-                    </h3>
-                </div>
-            </div>
-            <div class="card">
-                <img alt="Avatar" src="img/people/birger.jpg">
-                <div class="text">
-                    <h2>
-                        Birger
-                    </h2>
-                    <h3>
-                        Guitar, vocals
-                    </h3>
-                </div>
-            </div>
-            <div class="card">
-                <img alt="Avatar" src="img/people/lars.jpg">
-                <div class="text">
-                    <h2>
-                        Lars
-                    </h2>
-                    <h3>
-                        Drums
-                    </h3>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <div class="column">
-                <h1>
-                    Socials
-                </h1>
-                <p>
-                    <a href="https://www.instagram.com/humblband/" target="_blank">
-                        Instagram
-                    </a><br>
-                    <a href="https://www.facebook.com/people/Humbl-music/61559607733508/" target="_blank">
                         Facebook
                     </a>
                 </p>
             </div>
-            <div class="column">
-                <h1>
-                    Contact
-                </h1>
-                <p>
-                    Email: <a href="mailto:contact@humblband.com">
-                        contact@humblband.com
-                    </a>
-                </p>
+        </section>
+
+        <section class="people">
+            <div class="card">
+                
             </div>
-        </footer>
+        </section>
 
     </body>
 

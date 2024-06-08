@@ -38,6 +38,7 @@
     --color-4: #3c3c3c;
     --text-color: #fff;
     --transparent: rgba(255, 255, 255, .05);
+    --strong-transparent: rgba(255, 255, 255, .25);
     --accent-color: #ec008c;
 
 
@@ -227,6 +228,44 @@ a{
     height: fit-content;
     color: var(--text-color);
     font-size: 20px;
+}
+
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: fit-content;
+    border-top: 1px solid var(--strong-transparent);
+    background: var(--color-2);
+}
+
+footer
+.content{
+    width: 1216px;
+    height: fit-content;
+    padding: 42px;
+    margin: 0 auto;
+    max-width: calc(100% - 94px);
+}
+
+footer
+.content
+.column{
+    width: fit-content;
+    height: fit-content;
+}
+
+footer
+.content
+.column
+h2{
+    width: fit-content;
+    height: fit-content;
+    color: var(--text-color);
+    font-family: var(--strong-font);
+    font-weight: 300;
 }
 
 

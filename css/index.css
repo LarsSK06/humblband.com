@@ -97,3 +97,66 @@ a{
     height: fit-content;
     padding: 42px 0;
 }
+
+.people
+.content{
+    width: 1216px;
+    height: fit-content;
+    max-width: calc(100% - 94px);
+    padding: 0 42px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-flow: row wrap;
+    gap: 42px;
+}
+
+.people
+.content
+.card{
+    width: 260px;
+    height: fit-content;
+}
+
+.people
+.content
+.card
+img{
+    width: calc(100% - 4px);
+    height: auto;
+    aspect-ratio: .8;
+    object-fit: cover;
+    object-position: 0 -30px;
+    border-radius: 5px;
+    border: 2px solid var(--transparent);
+}
+
+.people
+.content
+.card
+h2{
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.people
+.content
+.card
+h3{
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666;
+}

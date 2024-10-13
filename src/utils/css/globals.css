@@ -1,0 +1,43 @@
+/* Tailwind CSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Layers */
+
+@layer base{
+    *{
+        @apply
+            m-0
+            p-0
+            flex-grow-0
+            flex-shrink-0
+            outline-none
+            border-none
+            text-color-4;
+    }
+
+    :root{
+        --width-main: 64rem;
+
+        --color-1: #020617;
+        --color-2: #0f172a;
+        --color-3: #1e293b;
+        --color-4: white;
+        --color-accent: #ec008c;
+        --color-glass: rgba(255, 255, 255, .1);
+    }
+}
+
+@layer utilities{
+    .responsive{
+        @apply
+            w-main
+            mx-auto
+            px-8
+            max-w-full
+    }
+}
